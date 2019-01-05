@@ -1648,7 +1648,7 @@ msg.channel.send(embed).then(() => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = ['by Fras#9999','-help','F5R BOT يرحب بكم'];	
+    var setGame = ['by Fras#9999','-help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -2281,7 +2281,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("307666420743798784").send(
+client.users.get("396958215377780747").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2757,26 +2757,26 @@ message.channel.stopTyping()
       
      
 
-client.on('message', fras => {
-var prefix = "*";
-if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels يحذف جميع شاتات
+client.on('message', omar => {
+var prefix = "-";
+if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels
 if (!omar.channel.guild) return;
 if(!omar.guild.member(omar.author).hasPermission("MANAGE_CHANNELS")) return omar.reply("**You Don't Have ` MANAGE_CHANNELS ` Permission**");
 if(!omar.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return omar.reply("**I Don't Have ` MANAGE_CHANNELS ` Permission**");
 omar.guild.channels.forEach(m => {
 m.delete();
-});
-}
-if(omar.content.split(' ')[0] == prefix + 'dr') { // delete all roles يحذف جميع رتب
+});// omar jedol / Codes
+}// omar jedol / Codes
+if(omar.content.split(' ')[0] == prefix + 'dr') { // delete all roles
 if (!omar.channel.guild) return;
 if(!omar.guild.member(omar.author).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return omar.reply("**You Don't Have ` MANAGE_ROLES_OR_PERMISSIONS ` Permission**");
 if(!omar.guild.member(client.user).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return omar.reply("**I Don't Have ` MANAGE_ROLES_OR_PERMISSIONS ` Permission**");
 omar.guild.roles.forEach(m => {
 m.delete();
-});//Toxis Codes 
+});// omar jedol / Codes
 omar.reply("`تم حذف جميع الرتب بنجاح`")
-}//Toxis Codes
-}); //Toxis Codes
+}// omar jedol / Codes
+});
 
 client.on('message', message => {
 	var prefix = "-";
